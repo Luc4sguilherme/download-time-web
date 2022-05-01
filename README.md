@@ -2,7 +2,7 @@
 
 **See live demo [here](https://luc4sguilherme.github.io/download-time-web/)**
 
-![Print](https://user-images.githubusercontent.com/29242243/166153552-c6989d12-36e2-42f5-9479-8b22edbfa589.jpg)
+![Print](https://user-images.githubusercontent.com/29242243/166153722-b99e9fa3-a4a3-4229-9da7-d92cdedcac0f.jpg)
 
 
 ## 🚀 Technologies

@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import './App.css';
 
-import {
-  calculate,
-  internetTypes,
-  Unit,
-  UnitSpeed,
-} from './utils/converterUnits';
+import './App.css';
+import calculateDownloadTime from './utils/calculateDownloadTime';
+import internetTypes from './utils/internetTypes';
+import { Unit, UnitSpeed } from './utils/unitConverter';
 
 function App() {
   const [fileSizeValue, setFileSizeValue] = useState(0);
@@ -85,7 +82,7 @@ function App() {
                   <td>{internet.speed}</td>
                   <td>
                     {fileSizeValue > 0 &&
-                      calculate(
+                      calculateDownloadTime(
                         { value: fileSizeValue, unit: fileSizeUnit },
                         {
                           value: Number(internetSpeed[0]),
@@ -151,7 +148,7 @@ function App() {
               </td>
               <td>
                 {ownSpeedValue > 0 &&
-                  calculate(
+                  calculateDownloadTime(
                     { value: fileSizeValue, unit: fileSizeUnit },
                     { value: ownSpeedValue, unit: ownSpeedUnit },
                   )}
